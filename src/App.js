@@ -1,12 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>E-Cart Application</h1>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <AppRoutes />
+        </BrowserRouter>
+    );
 }
 
 export default App;
