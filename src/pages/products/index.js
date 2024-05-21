@@ -79,6 +79,9 @@ const Products = () => {
         gap: "10px",
         padding: "20px",
     };
+    const cardViewStyles = {
+        border: "1px solid #dedede",
+    };
 
     const userProfileCardStyles = {
         display: "flex",
@@ -276,13 +279,13 @@ const Products = () => {
             <Box sx={userCardViewStyles}>
                 {usersData?.map((item, index) => {
                     return (
-                        <Card key={index}>
+                        <Card key={index} sx={cardViewStyles}>
                             <CardMedia
-                                sx={{ height: 140 }}
+                                sx={{ height: 140, backgorundSize: "contain" }}
                                 image={item?.avatar}
                                 title={`${item?.first_name} ${item?.last_name}`}
                             />
-                            <CardContent>
+                            <CardContent sx={{ alignSelf: "center" }}>
                                 <Typography
                                     gutterBottom
                                     variant="h5"

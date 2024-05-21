@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.MuiCardMedia-root {
+  background-size: contain !important;
+}
+
+.MuiCardContent-root {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.MuiCardActions-root {
+  display: flex !important;
+  justify-content: center !important;
+}
