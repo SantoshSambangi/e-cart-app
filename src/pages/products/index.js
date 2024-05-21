@@ -5,6 +5,7 @@ import Loader from "../../components/loader";
 
 // icons
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import LinearScaleIcon from "@mui/icons-material/LinearScale";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import GroupAddRoundedIcon from "@mui/icons-material/Edit";
@@ -249,14 +250,15 @@ const Products = () => {
         return (
             <Box sx={headerBlockStyles}>
                 <Typography variant="h5" sx={{ color: "white" }}>
-                    E-Cart
+                    Dashboard
                 </Typography>
                 <Box sx={rightContentBlockStyles}>
                     <IconButton
                         size="large"
                         aria-label="search"
                         color="inherit">
-                        <ShoppingCartIcon style={{ color: "#fff" }} />
+                        {/* <ShoppingCartIcon style={{ color: "#fff" }} /> */}
+                        <LinearScaleIcon style={{ color: "#fff" }} />
                     </IconButton>
                     <IconButton
                         size="large"
