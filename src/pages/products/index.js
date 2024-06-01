@@ -19,10 +19,15 @@ import CardMedia from "@mui/material/CardMedia";
 
 // modal
 import Modal from "@mui/material/Modal";
+import { useLocation } from "react-router-dom";
 
 const Products = () => {
     // base url:
     const baseUrl = "https://reqres.in/api";
+
+    const location = useLocation();
+    const userData = location?.state;
+    console.log("products", userData)
 
     // states:
     const [showLoader, setShowLoader] = useState(false);
@@ -256,7 +261,7 @@ const Products = () => {
                     Dashboard
                 </Typography>
                 <Box sx={rightContentBlockStyles}>
-                    <IconButton
+                    <IconButton onClick={()=> {}}
                         size="large"
                         aria-label="search"
                         color="inherit">
